@@ -28,9 +28,17 @@ namespace Full_GRASP_And_SOLID
 
             IPrinter printer;
             printer = new ConsolePrinter();
-            printer.PrintRecipe(recipe);
+            printer.PrintRecipe(recipe.GetTextToPrint());
             printer = new FilePrinter();
-            printer.PrintRecipe(recipe);
+            printer.PrintRecipe(recipe.GetTextToPrint());
+
+
+
+
+
+            //printer.PrintRecipe(recipe);
+            //printer = new FilePrinter();
+            //printer.PrintRecipe(recipe);
         }
 
         private static void PopulateCatalogs()
